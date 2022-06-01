@@ -1,1 +1,16 @@
 // Typography
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: $font-avengeance;
+}
+
+h1 {
+    @include font-size(6rem);
+    // letter-spacing: 30px;
+    text-transform: capitalize;
+}
+
+h2 {
+    @include font-size(2.5rem);
+    font-family: $font-avengeance;
+}

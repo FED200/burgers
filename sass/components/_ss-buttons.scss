@@ -1,0 +1,54 @@
+.btn {
+    border-radius: 90px;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+    font-family: $font-avengeance;
+    @include media-breakpoint-up(xl) {
+        min-width: 255px;
+    }
+
+    &-primary {
+        @include font-size(1.125rem);
+        line-height: 1.8;
+        padding: 0.5rem 1rem;
+
+        @include media-breakpoint-up(xl) {
+            padding: 1rem;
+        }
+    }
+
+    &-secondary {
+        @include font-size(1.6875rem);
+        background-color: $yellow;
+        border-color: $yellow;
+        transition: all .2s;
+        padding: 0.5rem 1rem;
+        color: $primary;
+
+        @include media-breakpoint-up(xl) {
+            padding: 0.75rem 1rem;
+        }
+
+        i {
+            padding-left: 13px;
+            vertical-align: middle;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border-color: $yellow;
+            color: $yellow;
+        }
+
+        &--sm {
+            @include font-size(0.875rem);
+            font-weight: 300;
+            font-family: $font-montserrat;
+            line-height: 2;
+            text-transform: capitalize;
+            min-width: 164px;
+            padding: 5px 1rem;
+            color: $white;
+        }
+    }
+}

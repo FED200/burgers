@@ -1,23 +1,10 @@
 @font-face {
-  font-family: 'Avengeance Mightiest Avenger';
-  src: url('#{$font-path}/AvengeanceMightiestAvenger.eot');
-  src: url('#{$font-path}/AvengeanceMightiestAvenger.eot?#iefix') format('embedded-opentype'),
-      url('#{$font-path}/AvengeanceMightiestAvenger.woff2') format('woff2'),
-      url('#{$font-path}/AvengeanceMightiestAvenger.woff') format('woff'),
-      url('#{$font-path}/AvengeanceMightiestAvenger.ttf') format('truetype'),
-      url('#{$font-path}/AvengeanceMightiestAvenger.svg#AvengeanceMightiestAvenger') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'icomoon';
-  src:  url('#{$font-path}/icomoon.eot?i6i158');
-  src:  url('#{$font-path}/icomoon.eot?i6i158#iefix') format('embedded-opentype'),
-    url('#{$font-path}/icomoon.ttf?i6i158') format('truetype'),
-    url('#{$font-path}/icomoon.woff?i6i158') format('woff'),
-    url('#{$font-path}/icomoon.svg?i6i158#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?i6i158');
+  src:  url('fonts/icomoon.eot?i6i158#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?i6i158') format('truetype'),
+    url('fonts/icomoon.woff?i6i158') format('woff'),
+    url('fonts/icomoon.svg?i6i158#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

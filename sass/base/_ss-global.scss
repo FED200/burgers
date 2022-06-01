@@ -6,11 +6,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	// background: url(#{$image-path}/bg-body.jpg) center;
-
-	@include media-breakpoint-up(xxl) {
-		@include font-size(1.125rem);
-		line-height: 2;
-	}
 }
 
 a {
