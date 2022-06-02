@@ -1,0 +1,40 @@
+.time {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        color: $white;
+        letter-spacing: 0.03em;
+        background-color: $yellow;
+        @include font-size(1.375rem);
+        font-family: $font-avengeance;
+
+        @include media-breakpoint-up(md) {
+            height: 64px;
+            width: 64px;
+            @include font-size(1.875rem);
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 85px;
+            width: 85px;
+            @include font-size(2.9375rem);
+        }
+
+    }
+
+    &-item {
+        text-align: center;
+        margin-right: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-right: 2rem;
+        }
+    }
+}
