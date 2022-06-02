@@ -95,4 +95,63 @@
         }
 
     }
+
+    &-icon {
+        padding: 1rem;
+        border-radius: 5px;
+        height: 100%;
+        transition: all 0.3s;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            transform: translateY(-3px);
+        }
+
+        &__media {
+            display: inline-block;
+
+            img {
+                max-width: 55%;
+
+                @include media-breakpoint-up(md) {
+                    max-width: 65%
+                }
+
+                @include media-breakpoint-up(lg) {
+                    max-width: 80%
+                }
+
+                @include media-breakpoint-up(xl) {
+                    max-width: 100%
+                }
+            }
+        }
+
+
+        h5,
+        .h5 {
+            @include font-size(1rem);
+            font-family: $font-montserrat;
+            text-transform: uppercase;
+            margin-top: auto;
+
+            @include media-breakpoint-up(md) {
+                @include font-size(1.125rem);
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(1.25rem);
+            }
+
+            a {
+                color: inherit;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
