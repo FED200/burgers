@@ -68,8 +68,22 @@ ol {
 	}
 }
 
+.text-primary {
+	color: $primary;
+}
+
 @for $i from 1 through 9 {
 	.font-#{$i*100} {
 		font-weight: $i * 100;
+	}
+}
+
+.gutter-13 {
+	margin-left: -13px;
+	margin-right: -13px;
+
+	[class*= "col-"] {
+		padding-left: 13px;
+		padding-right: 13px;
 	}
 }

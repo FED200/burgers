@@ -63,7 +63,7 @@
         &-nav {
             background-color: rgba($dark-pink, 0.61);
             height: 109px;
-            padding: 38px 0;
+            // padding: 38px 0;
             padding-left: 64px;
 
             .active {
@@ -77,9 +77,11 @@
                 font-weight: 300;
                 padding-right: 54px;
                 padding-left: 0;
+                padding-top: 43px;
+                padding-bottom: 42px;
 
                 &:hover {
-                    color: $primary;
+                    color: $yellow;
                 }
 
                 i {
@@ -90,44 +92,38 @@
 
             .nav-item {
                 position: relative;
-
-                &:hover {
-                    .dropdown-menu{
-                        visibility: visible;
-                        opacity: 1;
-                        transform: translateY(0px);
-                        display: block;
-                    }
-                } 
-
-                .dropdown {
-                    &-menu {
-                        visibility: hidden;
-                        opacity: 0;
-                        position: absolute;
-                        top: 100%;
-                        transform: translateY(50px);
-                        left: 0;
-                        width: 250px;
-                        background-color: $white;
-                        box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
-                        z-index: 111;
-                        transition: 0.4s all;
-                    }
-
-                    &-item {
-                        &:hover {
-                            color: $primary;
-                            background-color: transparent;
-                        }
-                    }
-                }
             }
         }
     }
 }
 
-.dropdown-menu {
-    border-radius: 0;
-}
+.header {
+    &-icon {
+        position: relative;
+        background-color: $primary;
+        padding: 38px 0;
+        padding: 31px 0 30px;
 
+        &:after {
+            position: absolute;
+            content: '';
+            background-color: $primary;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+        }
+        li {
+            @include font-size(2rem);
+            padding-left: 3.6875rem;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
