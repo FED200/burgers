@@ -1,59 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Burgers</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header id="header" class="site-header pb-3">
-	<nav class="site-nav">
-		<p>bnvhy</p>
-	</nav> <!-- / .site-nav -->
+    <header id="header" class="site-header pb-3">
+        <nav class="site-nav">
+            <p>bnvhy</p>
+        </nav> <!-- / .site-nav -->
 
-	<div class="phone-number">
-		<a href="tel:"></a>
-	</div> <!-- / .phone-number -->
+        <div class="phone-number">
+            <a href="tel:"></a>
+        </div> <!-- / .phone-number -->
 
-</header> <!-- / .site-header -->
+    </header> <!-- / .site-header -->
 
-<main id="main" class="site-content">
-    <div class="components container">
-        <h1>Heading</h1>
-        <h2>Heading</h2>
-        <h3>Heading</h3>
-        <h4>Heading</h4>
-        <h5>Heading</h5>
-        <h6>Heading</h6>
-        <hr>
-        <hr>
-        <h1>Party Time</h1>
-        <hr>
-        <h2>Want To Eat</h2>
-        <hr>
-        <hr>
-        <a href="#" class="btn btn-primary">Show Our Menu</a>
-        <a href="#" class="btn btn-secondary">Order Now <i class="icon-right-long-arrow"></i></a>
-        <a href="#" class="btn btn-secondary btn-secondary--sm"><i class="icon-cart"></i>Order Now</a>
-        <hr>
-        <hr>
-    </div>
-</main> <!-- / .site-content -->
+    <main id="main" class="site-content">
+        <div class="components container">
+            <h1>Heading</h1>
+            <h2>Heading</h2>
+            <h3>Heading</h3>
+            <h4>Heading</h4>
+            <h5>Heading</h5>
+            <h6>Heading</h6>
+            <hr>
+            <hr>
+            <h1>Party Time</h1>
+            <hr>
+            <h2>Want To Eat</h2>
+            <hr>
+            <hr>
+            <a href="#" class="btn btn-primary">Show Our Menu</a>
+            <a href="#" class="btn btn-secondary">Order Now <i class="icon-right-long-arrow"></i></a>
+            <a href="#" class="btn btn-secondary btn-secondary--sm"><i class="icon-cart"></i>Order Now</a>
+            <hr>
+            <hr>
+        </div>
 
-<footer id="footer" class="site-footer">
-	
-</footer> <!-- / .site-footer -->
+        <h3><em>.card-product</em></h3>
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-product">
+                        <picture class="card-product__media">
+                            <source srcset="assets/images/food-item-01.webp" type="image/webp">
+                            <source srcset="assets/images/food-item-01.jpg" type="image/jpg">
+                            <img src="assets/images/food-item-01.jpg" width="444" height="303" loading="lazy"
+                                alt="Food Item Img">
+                        </picture><!-- / .card-product__media -->
+                        <div class="card-product__content">
+                            <ul class="rating">
+                                <li>7.5 Rating</li>
+                            </ul>
+
+                            <h3>Attribute Variation</h3>
+                            <p>Chicken, tommato, green salad, pita, ketchup,….</p>
+                            <div class="card-product__info mt-lg-2">
+                                <a href="#" class="btn btn-secondary btn-secondary--sm"><i class="icon-cart"></i>Add To Cart</a>
+                                <span class="price">$10.99</span>
+                            </div><!-- / .card-product__info -->
+                        </div><!-- / .card-product__content -->
+                    </div><!-- / .card-product -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3><em>.recipes</em></h3>
+        <section class="recipes">
+            <div class="container">
+                <div class="row justify-content-center gutter-56-xl">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-product">
+                            <picture class="card-product__media">
+                                <source srcset="assets/images/food-item-01.webp" type="image/webp">
+                                <source srcset="assets/images/food-item-01.jpg" type="image/jpg">
+                                <img src="assets/images/food-item-01.jpg" width="444" height="303" loading="lazy"
+                                    alt="Food Item Img">
+                            </picture><!-- / .card-product__media -->
+                            <div class="card-product__content">
+                                <ul class="rating">
+                                    <li>7.5 Rating</li>
+                                </ul>
+
+                                <h3>Attribute Variation</h3>
+                                <p>Chicken, tommato, green salad, pita, ketchup,….</p>
+                                <div class="card-product__info mt-lg-2">
+                                    <a href="#" class="btn btn-secondary btn-secondary--sm"><i
+                                            class="icon-cart"></i>Add To Cart</a>
+                                    <span class="price">$10.99</span>
+                                </div><!-- / .card-product__info -->
+                            </div><!-- / .card-product__content -->
+                        </div><!-- / .card-product -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-product">
+                            <picture class="card-product__media">
+                                <source srcset="assets/images/food-item-02.webp" type="image/webp">
+                                <source srcset="assets/images/food-item-02.jpg" type="image/jpg">
+                                <img src="assets/images/food-item-02.jpg" width="444" height="303" loading="lazy"
+                                    alt="Food Item Img">
+                            </picture><!-- / .card-product__media -->
+                            <div class="card-product__content">
+                                <ul class="rating">
+                                    <li>7.5 Rating</li>
+                                </ul>
+
+                                <h3>Attribute Variation</h3>
+                                <p>Chicken, tommato, green salad, pita, ketchup,….</p>
+                                <div class="card-product__info mt-lg-2">
+                                    <a href="#" class="btn btn-secondary btn-secondary--sm"><i
+                                            class="icon-cart"></i>Add To Cart</a>
+                                    <span class="price">$10.99</span>
+                                </div><!-- / .card-product__info -->
+                            </div><!-- / .card-product__content -->
+                        </div><!-- / .card-product -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-product">
+                            <picture class="card-product__media">
+                                <source srcset="assets/images/food-item-03.webp" type="image/webp">
+                                <source srcset="assets/images/food-item-03.jpg" type="image/jpg">
+                                <img src="assets/images/food-item-03.jpg" width="444" height="303" loading="lazy"
+                                    alt="Food Item Img">
+                            </picture><!-- / .card-product__media -->
+                            <div class="card-product__content">
+                                <ul class="rating">
+                                    <li>7.5 Rating</li>
+                                </ul>
+
+                                <h3>Attribute Variation</h3>
+                                <p>Chicken, tommato, green salad, pita, ketchup,….</p>
+                                <div class="card-product__info mt-lg-2">
+                                    <a href="#" class="btn btn-secondary btn-secondary--sm"><i
+                                            class="icon-cart"></i>Add To Cart</a>
+                                    <span class="price">$10.99</span>
+                                </div><!-- / .card-product__info -->
+                            </div><!-- / .card-product__content -->
+                        </div><!-- / .card-product -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-product">
+                            <picture class="card-product__media">
+                                <source srcset="assets/images/food-item-04.webp" type="image/webp">
+                                <source srcset="assets/images/food-item-04.jpg" type="image/jpg">
+                                <img src="assets/images/food-item-04.jpg" width="444" height="303" loading="lazy"
+                                    alt="Food Item Img">
+                            </picture><!-- / .card-product__media -->
+                            <div class="card-product__content">
+                                <ul class="rating">
+                                    <li>7.5 Rating</li>
+                                </ul>
+
+                                <h3>Attribute Variation</h3>
+                                <p>Chicken, tommato, green salad, pita, ketchup,….</p>
+                                <div class="card-product__info mt-lg-2">
+                                    <a href="#" class="btn btn-secondary btn-secondary--sm"><i
+                                            class="icon-cart"></i>Add To Cart</a>
+                                    <span class="price">$10.99</span>
+                                </div><!-- / .card-product__info -->
+                            </div><!-- / .card-product__content -->
+                        </div><!-- / .card-product -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-product">
+                            <picture class="card-product__media">
+                                <source srcset="assets/images/food-item-05.webp" type="image/webp">
+                                <source srcset="assets/images/food-item-05.jpg" type="image/jpg">
+                                <img src="assets/images/food-item-05.jpg" width="444" height="303" loading="lazy"
+                                    alt="Food Item Img">
+                            </picture><!-- / .card-product__media -->
+                            <div class="card-product__content">
+                                <ul class="rating">
+                                    <li>7.5 Rating</li>
+                                </ul>
+
+                                <h3>Attribute Variation</h3>
+                                <p>Chicken, tommato, green salad, pita, ketchup,….</p>
+                                <div class="card-product__info mt-lg-2">
+                                    <a href="#" class="btn btn-secondary btn-secondary--sm"><i
+                                            class="icon-cart"></i>Add To Cart</a>
+                                    <span class="price">$10.99</span>
+                                </div><!-- / .card-product__info -->
+                            </div><!-- / .card-product__content -->
+                        </div><!-- / .card-product -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-product">
+                            <picture class="card-product__media">
+                                <source srcset="assets/images/food-item-06.webp" type="image/webp">
+                                <source srcset="assets/images/food-item-06.jpg" type="image/jpg">
+                                <img src="assets/images/food-item-06.jpg" width="444" height="303" loading="lazy"
+                                    alt="Food Item Img">
+                            </picture><!-- / .card-product__media -->
+                            <div class="card-product__content">
+                                <ul class="rating">
+                                    <li>7.5 Rating</li>
+                                </ul>
+
+                                <h3>Attribute Variation</h3>
+                                <p>Chicken, tommato, green salad, pita, ketchup,….</p>
+                                <div class="card-product__info mt-lg-2">
+                                    <a href="#" class="btn btn-secondary btn-secondary--sm"><i
+                                            class="icon-cart"></i>Add To Cart</a>
+                                    <span class="price">$10.99</span>
+                                </div><!-- / .card-product__info -->
+                            </div><!-- / .card-product__content -->
+                        </div><!-- / .card-product -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main> <!-- / .site-content -->
+
+    <footer id="footer" class="site-footer">
+
+    </footer> <!-- / .site-footer -->
 
 
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

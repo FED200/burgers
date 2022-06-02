@@ -12200,6 +12200,138 @@ iframe {
   height: 100%;
 }
 
+.block-width-100 {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+@media (min-width: 1600px) {
+  .block-width-120xll {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-99 {
+    max-width: 61.875rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-90 {
+    max-width: 56.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-95 {
+    max-width: 59.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-88 {
+    max-width: 880px;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-87 {
+    max-width: 54.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-80 {
+    max-width: 50rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-85 {
+    max-width: 53.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-70 {
+    max-width: 43.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-75 {
+    max-width: 46.875rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-60 {
+    max-width: 37.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-65 {
+    max-width: 40.625rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-50 {
+    max-width: 31.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-55 {
+    max-width: 34.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-40 {
+    max-width: 25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-45 {
+    max-width: 28.125rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-30 {
+    max-width: 18.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .block-width-35 {
+    max-width: 21.875rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gutter-56-xl {
+    margin-right: -28px;
+    margin-left: -28px;
+  }
+}
+
+.gutter-56-xl [class*="col-"] {
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 1200px) {
+  .gutter-56-xl [class*="col-"] {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 56px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-family: "Avengeance Mightiest Avenger";
@@ -12290,9 +12422,15 @@ h2 {
   font-family: "Montserrat", sans-serif;
   line-height: 2;
   text-transform: capitalize;
-  min-width: 164px;
+  min-width: 140px;
   padding: 5px 1rem;
   color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .btn-secondary--sm {
+    min-width: 164px;
+  }
 }
 
 .btn-secondary--sm i {
@@ -12309,6 +12447,100 @@ h2 {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.card-product {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+@media (max-width: 991.98px) {
+  .card-product {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+.card-product:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card-product__media {
+  border-radius: 6px;
+}
+
+.card-product__media img {
+  width: 100%;
+}
+
+.card-product__content {
+  padding: 1rem;
+}
+
+@media (min-width: 992px) {
+  .card-product__content {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-product__content {
+    padding: 2.0625rem 2.25rem;
+  }
+}
+
+.card-product__content h3,
+.card-product__content .h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-product__content .rating {
+  padding-left: 0;
+}
+
+.card-product__content .rating li {
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.card-product__content .rating li::before {
+  position: absolute;
+  content: '\e914';
+  font-family: 'icomoon';
+  top: 0;
+  left: 0;
+  color: #ffaa00;
+}
+
+.card-product__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-product__info .price {
+  font-family: "Avengeance Mightiest Avenger";
+  color: #a80e0e;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 992px) {
+  .card-product__info .price {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .card-product__info .price {
+    font-size: calc(1.2625rem + 0.15vw) ;
+  }
 }
 
 .site-header {

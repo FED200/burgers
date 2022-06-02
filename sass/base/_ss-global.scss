@@ -34,6 +34,7 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
 .site {
 	&-wrapper {
 		min-width: 320px;
@@ -45,9 +46,11 @@ body {
 		align-items: stretch;
 		flex-direction: column;
 	}
+
 	&-content {
 		flex-grow: 1;
 	}
+
 	&-header,
 	&-content,
 	&-footer {
@@ -62,4 +65,140 @@ picture {
 iframe {
 	width: 100%;
 	height: 100%;
+}
+
+.block {
+	&-width {
+		&-100 {
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+
+		&-120xll {
+			@include media-breakpoint-up(xxl) {
+				max-width: 1200px;
+			}
+		}
+
+		&-99 {
+			@include media-breakpoint-up(lg) {
+				max-width: 61.875rem;
+			}
+		}
+
+		&-90 {
+			@include media-breakpoint-up(lg) {
+				max-width: 56.25rem;
+			}
+		}
+
+		&-95 {
+			@include media-breakpoint-up(lg) {
+				max-width: 59.375rem;
+			}
+		}
+
+		&-88 {
+			@include media-breakpoint-up(lg) {
+				max-width: 880px;
+			}
+		}
+
+		&-87 {
+			@include media-breakpoint-up(lg) {
+				max-width: 54.375rem;
+			}
+		}
+
+		&-80 {
+			@include media-breakpoint-up(lg) {
+				max-width: 50rem;
+			}
+		}
+
+		&-85 {
+			@include media-breakpoint-up(lg) {
+				max-width: 53.125rem;
+			}
+		}
+
+		&-70 {
+			@include media-breakpoint-up(lg) {
+				max-width: 43.75rem;
+			}
+		}
+
+		&-75 {
+			@include media-breakpoint-up(lg) {
+				max-width: 46.875rem;
+			}
+		}
+
+		&-60 {
+			@include media-breakpoint-up(lg) {
+				max-width: 37.5rem;
+			}
+		}
+
+		&-65 {
+			@include media-breakpoint-up(lg) {
+				max-width: 40.625rem;
+			}
+		}
+
+		&-50 {
+			@include media-breakpoint-up(lg) {
+				max-width: 31.25rem;
+			}
+		}
+
+		&-55 {
+			@include media-breakpoint-up(lg) {
+				max-width: 34.375rem;
+			}
+		}
+
+		&-40 {
+			@include media-breakpoint-up(lg) {
+				max-width: 25rem;
+			}
+		}
+
+		&-45 {
+			@include media-breakpoint-up(lg) {
+				max-width: 28.125rem;
+			}
+		}
+
+		&-30 {
+			@include media-breakpoint-up(lg) {
+				max-width: 18.75rem;
+			}
+		}
+
+		&-35 {
+			@include media-breakpoint-up(lg) {
+				max-width: 21.875rem;
+			}
+		}
+	}
+}
+
+.gutter-56-xl {
+
+	@include media-breakpoint-up(xl) {
+		margin-right: -28px;
+		margin-left: -28px;
+	}
+
+	[class*="col-"] {
+		margin-bottom: 1.875rem;
+
+		@include media-breakpoint-up(xl) {
+			padding-left: 28px;
+			padding-right: 28px;
+			margin-bottom: 56px;
+
+		}
+	}
 }
